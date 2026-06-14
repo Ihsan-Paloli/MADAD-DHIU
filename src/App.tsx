@@ -1,4 +1,5 @@
 import { Routes, Route, Link, useLocation } from "react-router-dom";
+import ResetPassword from "@/routes/reset-password";
 import { useEffect } from "react";
 import Home from "./routes/index";
 import About from "./routes/about";
@@ -74,6 +75,7 @@ export function App() {
         <Route path="/stationery" element={<Stationery />} />
         <Route path="/wings" element={<WingsIndex />} />
         <Route path="/wings/:slug" element={<WingSlug />} />
+        <Route path="/reset-password" element={<ResetPassword />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>
