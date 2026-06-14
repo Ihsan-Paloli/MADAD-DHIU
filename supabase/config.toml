@@ -1,0 +1,38 @@
+project_id = "visgnwzwwozbegicxxyt"
+
+# Edge Functions
+# - `feedback` accepts an unauthenticated `submitFeedback` action; verify_jwt = false.
+# - `portal-auth` accepts both anonymous password verification and JWT-authenticated
+#   admin actions; verify_jwt = false (admin path validates the bearer inside).
+# - `results` exposes a public `getResultForProgram` action; verify_jwt = false.
+# All other functions enforce HMAC portal tokens in their handler bodies.
+
+[functions.feedback]
+verify_jwt = false
+
+[functions.portal-auth]
+verify_jwt = false
+
+[functions.results]
+verify_jwt = false
+
+[functions.achievements]
+verify_jwt = false
+
+[functions.auditing]
+verify_jwt = false
+
+[functions.gallery]
+verify_jwt = false
+
+[functions.programs]
+verify_jwt = false
+
+[functions.quick-links]
+verify_jwt = false
+
+[functions.stationery]
+verify_jwt = false
+
+[functions.uploads]
+verify_jwt = false
