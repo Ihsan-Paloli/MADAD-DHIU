@@ -1,11 +1,6 @@
 {
-  "name": "MADAD — Darul Huda",
+  "name": "MADAD",
   "short_name": "MADAD",
-  "start_url": "/",
-  "scope": "/",
-  "display": "standalone",
-  "theme_color": "#0a3d2e",
-  "background_color": "#020817",
   "icons": [
     {
       "src": "/icon-192.png",
@@ -17,5 +12,8 @@
       "sizes": "512x512",
       "type": "image/png"
     }
-  ]
+  ],
+  "theme_color": "#0f3d1e",
+  "background_color": "#ffffff",
+  "display": "standalone"
 }

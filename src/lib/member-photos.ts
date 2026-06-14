@@ -7,17 +7,17 @@ type Role = "chairman" | "convenor1" | "convenor2";
 const AVAILABLE: Record<string, Role[]> = {
   arb: ["chairman", "convenor1","convenor2"],
   auditory: ["chairman", "convenor1", "convenor2"],
-  english: ["chairman", "convenor1"],
+  english: ["chairman", "convenor1","convenor2"],
   gk: ["chairman", "convenor1", "convenor2"],
-  library: ["chairman", "convenor2"],
-  malayalam: ["convenor1"],
+  library: ["chairman", "convenor2","convenor1"],
+  malayalam: ["chairman","convenor1","convenor2"],
   media: ["chairman","convenor1"],
-  pkv: ["convenor1"],
+  pkv: ["chairman","convenor1","convenor2"],
   publishing: ["chairman", "convenor1", "convenor2"],
-  sab: ["convenor1", "convenor2"],
-  skssf: ["chairman", "convenor2"],
+  sab: ["chairman","convenor1", "convenor2"],
+  skssf: ["chairman", "convenor1" ,"convenor2"],
   srdb: ["chairman", "convenor1", "convenor2"],
-  urdu: ["chairman"],
+  urdu: ["chairman","convenor1","convenor2"],
 };
 
 export function getMemberPhoto(slug: string, role: Role): string | undefined {
@@ -34,7 +34,7 @@ const AVAILABLE_CORE: Record<string, "png" | "jpg" | "jpeg" | "webp"> = {
   "president": "png",
   "joint-secretary": "png",
   "office-secretary": "png",
-  "secretary":"png",
+  "vice-president": "png",
 };
 
 function roleToSlug(role: string): string {
