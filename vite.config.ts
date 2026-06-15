@@ -16,35 +16,38 @@ export default defineConfig({
     tailwindcss(),
 
     VitePWA({
-      registerType: "autoUpdate",
-      includeAssets: [
-        "favicon.ico",
-        "favicon-16x16.png",
-        "favicon-32x32.png",
-        "favicon-48x48.png",
-        "apple-touch-icon.png",
-      ],
-      manifest: {
-        name: "MADAD",
-        short_name: "MADAD",
-        description: "Medium for Associative and Directive Activities of Darul Huda",
-        theme_color: "#0f3d1e",
-        background_color: "#ffffff",
-        display: "standalone",
-        start_url: "/",
-        icons: [
-          {
-            src: "icon-192.png",
-            sizes: "192x192",
-            type: "image/png",
-          },
-          {
-            src: "icon-512.png",
-            sizes: "512x512",
-            type: "image/png",
-          },
-        ],
-      },
-    }),
+  registerType: "autoUpdate",
+  includeAssets: [
+    "favicon.ico",
+    "favicon-16x16.png",
+    "favicon-32x32.png",
+    "favicon-48x48.png",
+    "apple-touch-icon.png",
+  ],
+  manifest: {
+  id: "/",
+  name: "MADAD",
+  short_name: "MADAD",
+  description: "Medium for Associative and Directive Activities of Darul Huda",
+  start_url: "/",
+  scope: "/",
+  display: "standalone",
+  orientation: "portrait",
+  theme_color: "#0f3d1e",
+  background_color: "#ffffff",
+  icons: [
+    {
+      src: "/icon-192.png",
+      sizes: "192x192",
+      type: "image/png",
+    },
+    {
+      src: "/icon-512.png",
+      sizes: "512x512",
+      type: "image/png",
+    },
+  ],
+},
+}),
   ],
 });
