@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://madad-dhiu.web.app/sitemap.xml
